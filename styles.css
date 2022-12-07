@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+    background-color: black;
+}
+
+.gameArea {
+    z-index: 2;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+
+    background-color: white;
+}
+
+.nonPlayArea {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    background-color: yellow;
+}
+
+.tower_blueprint {
+    z-index: 24;
+    display: block;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+
+    pointer-events: none;
+    background-color: blue;
+}
+
+.tower {
+    z-index: 24;
+    display: block;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+
+    background-color: rgb(255, 0, 0);
+}
+
+.money-wrapper {
+    z-index: 25;
+    position: absolute;
+    width: 350px;
+    height: 100px;
+
+    text-align: right;
+}
+
+.kills-wrapper {
+    z-index: 25;
+    position: absolute;
+    width: 350px;
+    height: 100px;
+
+    text-align: right;
+    margin-top: 75px;
+}
+
+#purchase {
+    z-index: 25;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}

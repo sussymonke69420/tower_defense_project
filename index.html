@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>towr dedense</title>
+
+    <link rel="stylesheet" href="./styles.css">
+    <script defer src="./main.js"></script>
+
+</head>
+<body onload="updateInfoBar()">
+
+    <div class="gameArea" id="game_area" onmouseover="changePlaceableArea(true)"></div>
+    <div class="nonPlayArea" id="non_play_area" onmouseover="changePlaceableArea(false)"></div>
+
+    <h1 class="money-wrapper">Money: $<span id="money_label"></span></h1>
+    <h1 class="kills-wrapper">Kills: <span id="kills_label"></span></h1>
+
+    <button id="purchase" onclick="createBlueprint('Bomb Shooter', 250)">buy bomb shooter</button>
+
+</body>
+</html>
